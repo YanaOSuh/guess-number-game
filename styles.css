@@ -1,0 +1,80 @@
+body {
+    background-color: #bcb1ab;
+    background-image: url(closed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: start;
+    margin-left: 30px;
+}
+h1 {
+    font-size: 70px;
+    font-family: 'Advent Pro', sans-serif;
+    color: #dab202;
+    text-shadow: 1px 1px 2px #232732;
+}
+.container {
+    background: rgba(188, 177, 171, 0.82);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: 1px solid rgba(188, 177, 171, 0.17);
+    width: 30%;
+    padding: 20px;
+    margin-left: 60px;
+}
+h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    color: #636164;
+}
+#guess {
+    padding: 10px;
+    width: 50%;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    background: rgba(218, 178, 2, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+    border: 1px solid rgba(218, 178, 2, 0.17);
+}
+#btn {
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    padding: 20px;
+    border: none;
+    border-radius: 16px;
+    margin-top: 20px;
+    background-color:#636164;
+    color: #bcb1ab;
+    letter-spacing: 1px;
+    cursor: help;
+}
+
+@media all and (max-width: 912px) {
+    .container {
+        width: 50%;
+    }
+    #guess {
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 500px) {
+    #guess {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .container {
+        margin-left: 20px;
+    }
+}
